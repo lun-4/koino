@@ -6,13 +6,13 @@ description: CommonMark + GFM compatible Markdown parser and renderer
 dependencies:
   - name: libpcre
     main: vendor/libpcre.zig/src/main.zig
-    src: local libpcre
+    src: local vendor/libpcre.zig/src/main.zig
   - name: htmlentities
     main: vendor/htmlentities.zig/src/main.zig
-    src: local htmlentities
+    src: local vendor/zunicode/src/zunicode.zig
   - name: clap
     main: vendor/zig-clap/clap.zig
-    src: local clap
+    src: local vendor/zunicode/src/zunicode.zig
   - name: zunicode
     main: vendor/zunicode/src/zunicode.zig
-    src: local zunicode
+    src: local vendor/zunicode/src/zunicode.zig
