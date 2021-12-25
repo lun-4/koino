@@ -79,7 +79,7 @@ var searchFirstCaptureBufferAllocator = std.heap.FixedBufferAllocator.init(&sear
 
 fn searchFirstCapture(re: Regex, line: []const u8) Error!?usize {
     searchFirstCaptureBufferAllocator.reset();
-    var result = re.captures(searchFirstCaptureBufferAllocator.allocator(), line, .{ .Anchored = true }) catch |err| switch (err) {
+    var result = re.captures(searchFirstCaptureBufferAllocator.allocator(), line, 0, .{ .Anchored = true }) catch |err| switch (err) {
         error.OutOfMemory => return error.OutOfMemory,
         else => null,
     };
