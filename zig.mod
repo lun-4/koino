@@ -3,7 +3,7 @@ name: koino
 main: src/koino.zig
 license: MIT
 description: CommonMark + GFM compatible Markdown parser and renderer
-dependencies:
+dev_dependencies:
   - name: libpcre
     main: src/main.zig
     src: git https://github.com/kivikakk/libpcre.zig
