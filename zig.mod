@@ -5,14 +5,18 @@ license: MIT
 description: CommonMark + GFM compatible Markdown parser and renderer
 dependencies:
   - name: libpcre
-    main: vendor/libpcre.zig/src/main.zig
-    src: local vendor/libpcre.zig/src/main.zig
+    main: src/main.zig
+    src: git https://github.com/kivikakk/libpcre.zig
+    version: commit-56b02f9
   - name: htmlentities
-    main: vendor/htmlentities.zig/src/main.zig
-    src: local vendor/zunicode/src/zunicode.zig
+    main: src/main.zig
+    src: git https://github.com/kivikakk/htmlentities.zig
+    version: commit-311c844
   - name: clap
-    main: vendor/zig-clap/clap.zig
-    src: local vendor/zunicode/src/zunicode.zig
+    main: clap.zig
+    src: git https://github.com/kivikakk/zig-clap
+    version: commit-2acde36
   - name: zunicode
-    main: vendor/zunicode/src/zunicode.zig
-    src: local vendor/zunicode/src/zunicode.zig
+    main: src/zunicode.zig
+    src: git https://github.com/kivikakk/zunicode
+    version: commit-5bf4a3a
