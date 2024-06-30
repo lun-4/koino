@@ -4,8 +4,8 @@
     .minimum_zig_version = "0.12.0",
     .dependencies = .{
         .@"libpcre.zig" = .{
-            .url = "https://github.com/lun-4/libpcre.zig/archive/0d2cbde3ce67345bd6777d321e8601e7fddf234f.tar.gz",
-            .hash = "122073991740145418bd4ecea59c5f885b1fb92def243ac6ef803978d53cbf2d6d18",
+            .url = "https://github.com/lun-4/libpcre.zig/archive/96820464cd6ee81137ad675c5fe2bd0923bdf782.tar.gz",
+            .hash = "12205450f9f1ca3cd8f44b3e329f884dac7b38fc323e00866b3897790c4f0f3cdff0",
         },
         .@"htmlentities.zig" = .{
             .url = "https://github.com/kivikakk/htmlentities.zig/archive/6c6ab63c9fce8317049d332377db760a2c8932e7.tar.gz",
